@@ -14,7 +14,7 @@ namespace Parent {
     }
 }
 
-int main() {
+int main(int argc, char** argv) {
     Parent::V1::foo();
     Parent::foo();
 
