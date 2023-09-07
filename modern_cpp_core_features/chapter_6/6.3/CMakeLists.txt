@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(rvalue_reference_)
+set(CMAKE_CXX_STANDARD 11)
+add_compile_options(-fno-elide-constructors)
+add_executable(rvalue_reference main.cpp)
