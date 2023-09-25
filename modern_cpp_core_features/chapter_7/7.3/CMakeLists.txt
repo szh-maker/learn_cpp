@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(lambda_expression_principle)
+add_compile_options(-fdump-tree-gimple)
+set(CMAKE_CXX_STANDARD 20)
+add_executable(lambda_expression_principle main.cpp)
