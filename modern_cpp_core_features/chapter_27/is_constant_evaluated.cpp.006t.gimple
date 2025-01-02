@@ -1,0 +1,92 @@
+boollein ()
+{
+  int D.25654;
+
+  {
+    const double kilo;
+    int n;
+    double mucho;
+
+    kilo = 1.0e+3;
+    n = 3;
+    mucho = power (1.0e+1, n);
+    D.25654 = 0;
+    return D.25654;
+  }
+  D.25654 = 0;
+  return D.25654;
+}
+
+
+ power (double b, int x)
+{
+  bool retval.0;
+  bool iftmp.1;
+  double D.25667;
+
+  {
+    _1 = std::is_constant_evaluated ();
+    if (_1 != 0) goto <D.25660>; else goto <D.25658>;
+    <D.25660>:
+    if (x >= 0) goto <D.25661>; else goto <D.25658>;
+    <D.25661>:
+    iftmp.1 = 1;
+    goto <D.25659>;
+    <D.25658>:
+    iftmp.1 = 0;
+    <D.25659>:
+    retval.0 = iftmp.1;
+    if (retval.0 != 0) goto <D.25662>; else goto <D.25663>;
+    <D.25662>:
+    {
+      double r;
+      double p;
+      unsigned int u;
+
+      r = 1.0e+0;
+      p = b;
+      u = (unsigned int) x;
+      goto <D.23818>;
+      <D.23819>:
+      _2 = u & 1;
+      if (_2 != 0) goto <D.25664>; else goto <D.25665>;
+      <D.25664>:
+      r = r * p;
+      goto <D.25666>;
+      <D.25665>:
+      <D.25666>:
+      u = u >> 1;
+      p = p * p;
+      <D.23818>:
+      if (u != 0) goto <D.23819>; else goto <D.23817>;
+      <D.23817>:
+      D.25667 = r;
+      // predicted unlikely by early return (on trees) predictor.
+      return D.25667;
+    }
+    <D.25663>:
+    _3 = (double) x;
+    D.25667 = pow (b, _3);
+    return D.25667;
+  }
+  __builtin_unreachable trap ();
+}
+
+
+ std::is_constant_evaluated ()
+{
+  bool D.25669;
+
+  try
+    {
+      D.25669 = 0;
+      return D.25669;
+    }
+  catch
+    {
+      <<<eh_must_not_throw (__cxa_call_terminate)>>>
+    }
+  __builtin_unreachable trap ();
+}
+
+

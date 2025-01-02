@@ -1,0 +1,35 @@
+int main ()
+{
+  int D.2857;
+
+  {
+    struct X x;
+    int i;
+
+    try
+      {
+        _1 = &_ZTV1X + 16;
+        x._vptr.X = _1;
+        i = 1;
+        D.2857 = 0;
+        return D.2857;
+      }
+    finally
+      {
+        x = {CLOBBER(eos)};
+      }
+  }
+  D.2857 = 0;
+  return D.2857;
+}
+
+
+ X::f (const struct X * const this)
+{
+  int D.2860;
+
+  D.2860 = 1;
+  return D.2860;
+}
+
+

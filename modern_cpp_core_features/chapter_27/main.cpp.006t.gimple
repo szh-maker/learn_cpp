@@ -1,0 +1,32 @@
+int main ()
+{
+  int D.56780;
+
+  {
+    const struct X x1;
+    const struct X x2;
+    const int a1;
+    const int a2;
+
+    try
+      {
+        x1.x1 = 8;
+        x2.x1 = 42;
+        a1 = 8;
+        a2 = 42;
+        _1 = std::basic_ostream<char>::operator<< (&cout, 8);
+        std::basic_ostream<char>::operator<< (_1, endl);
+        _2 = std::basic_ostream<char>::operator<< (&cout, 42);
+        std::basic_ostream<char>::operator<< (_2, endl);
+      }
+    finally
+      {
+        x1 = {CLOBBER(eos)};
+        x2 = {CLOBBER(eos)};
+      }
+  }
+  D.56780 = 0;
+  return D.56780;
+}
+
+
